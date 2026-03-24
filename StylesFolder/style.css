@@ -2,14 +2,13 @@ body {
   background: #f3f2ef;
   font-family: Arial, sans-serif;
 }
-
-h2 {
-    font-size: 990px !important;
-    font-weight: 600;
-    line-height: 1.2;
+body {
+  background: #f3f2ef;
+  font-family: Arial, sans-serif;
 }
+
 .mb-4 {
-    margin-bottom: 3.5rem !important;
+  margin-bottom: 3.5rem !important;
 }
 
 .btn {
@@ -26,11 +25,6 @@ h2 {
 }
 
 .profile-pic {
-  border-radius: 50%;
-  border: 3px solid #0a66c2;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  width: 80px;   
-  height: 80px;
   object-fit: cover;
 }
 
@@ -43,59 +37,82 @@ h2 {
   flex-direction: column;
   justify-content: center;
 }
-.profile-pic.mb-3{
-    height: 610px!important;
+
+.profile-pic.mb-3 {
+  height: 610px !important;
 }
+
 .main-heading {
-    font-size: 48px;
-    font-weight: 600;
-    line-height: 1.2;
+  font-size: 55px;   
+  font-weight: 700;
+  line-height: 1.2;
+}
+footer {
+  font-size: 14px;
 }
 
+footer h6 {
+  margin-bottom: 15px;
+  color: #333;
+}
 
+footer a {
+  text-decoration: none;
+  color: #555;
+}
 
-
-
+footer a:hover {
+  color: #0a66c2; /* LinkedIn blue */
+}
 
 
 @media (max-width: 992px) {
-  .profile-pic {
-    width: 70px;
-    height: 70px;
-  }
   .illustration i {
     font-size: 1.5rem;
   }
+
   .illustration p {
     font-size: 1rem;
   }
+    .main-heading {
+  font-size: 45px;   
+  font-weight: 700;
+  line-height: 1.2;
+}
 }
 
 @media (max-width: 768px) {
-   h2 {
-    font-size: 36px;
-  }
+
   .btn {
     font-size: 0.9rem;
   }
+  .main-heading {
+  font-size: 45px;   
+  font-weight: 700;
+  line-height: 1.2;
+}
+
 }
 
 @media (max-width: 576px) {
-  h2 {
-    font-size: 28px;
-  }
+
   .btn {
     font-size: 0.8rem;
     padding: 8px;
   }
-   .profile-pic {
-    width: 60px;
-    height: 60px;
-  }
   .illustration i {
     font-size: 1.2rem;
   }
+
   .illustration p {
     font-size: 0.9rem;
   }
+  .profile-pic.mb-3 {
+  height: 410px !important;
+}
+  .main-heading {
+  font-size: 30px;   
+  font-weight: 700;
+  line-height: 1.2;
+}
 }
