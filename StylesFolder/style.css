@@ -2,6 +2,7 @@ body {
   background: #f3f2ef;
   font-family: Arial, sans-serif;
 }
+
 body {
   background: #f3f2ef;
   font-family: Arial, sans-serif;
@@ -43,10 +44,11 @@ body {
 }
 
 .main-heading {
-  font-size: 55px;   
+  font-size: 55px;
   font-weight: 700;
   line-height: 1.2;
 }
+
 footer {
   font-size: 14px;
 }
@@ -62,7 +64,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #0a66c2; /* LinkedIn blue */
+  color: #0a66c2;
 }
 
 
@@ -74,11 +76,12 @@ footer a:hover {
   .illustration p {
     font-size: 1rem;
   }
-    .main-heading {
-  font-size: 45px;   
-  font-weight: 700;
-  line-height: 1.2;
-}
+
+  .main-heading {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
 }
 
 @media (max-width: 768px) {
@@ -86,11 +89,12 @@ footer a:hover {
   .btn {
     font-size: 0.9rem;
   }
+
   .main-heading {
-  font-size: 45px;   
-  font-weight: 700;
-  line-height: 1.2;
-}
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
 
 }
 
@@ -100,6 +104,7 @@ footer a:hover {
     font-size: 0.8rem;
     padding: 8px;
   }
+
   .illustration i {
     font-size: 1.2rem;
   }
@@ -107,12 +112,14 @@ footer a:hover {
   .illustration p {
     font-size: 0.9rem;
   }
+
   .profile-pic.mb-3 {
-  height: 410px !important;
-}
+    height: 410px !important;
+  }
+
   .main-heading {
-  font-size: 30px;   
-  font-weight: 700;
-  line-height: 1.2;
-}
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
 }

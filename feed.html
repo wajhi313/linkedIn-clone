@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +10,10 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 
 </head>
+
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg shadow-sm">
+  <nav class="navbar navbar-expand-lg shadow-sm sticky-top bg-white">
     <div class="container-fluid">
       <!-- Logo -->
       <a class="navbar-brand text-primary fw-bold" href="#">
@@ -21,6 +23,7 @@
       <!-- Search -->
       <form class="d-flex me-auto">
         <input class="form-control search-bar" type="search" placeholder="Search">
+        <i class="fa-brands fa-sistrix"></i>
       </form>
 
       <!-- Nav Icons -->
@@ -44,7 +47,7 @@
           </a>
         </li>
         <li class="nav-item mx-2">
-          <a class="nav-link" href="#"><i class="fa-solid fa-circle-user"></i><span>Me</span></a>
+          <a class="nav-link" href="index.html"><i class="fa-solid fa-circle-user"></i><span>Me</span></a>
         </li>
         <li class="nav-item mx-2">
           <a class="nav-link" href="#"><i class="fa-solid fa-list-check"></i><span>For Business</span></a>
@@ -58,43 +61,228 @@
 
   <!-- Left Sidebar -->
   <div class="sidebar-left bg-white p-3 border-end">
-    <h6><i class="fa-solid fa-user"></i> Profile</h6>
-    <p>👤 Syed Wajhi</p>
-    <p>📍 Karachi, Sindh</p>
-    <hr>
-    <h6>Saved Items</h6>
-    <ul class="list-unstyled">
-      <li>⭐ Groups</li>
-      <li>📰 Newsletters</li>
-      <li>📅 Events</li>
-    </ul>
+    <div class="container-fluid leftside"> <img class="coverphoto" src="./pic/coverphoto.jpg" class="coverphoto">
+      <!-- Profile pic -->
+      <div class="profilepic">
+        <img src="./pic/profilepic.jpeg" alt="">
+      </div>
+
+      <!-- info -->
+      <div class="profile-info">
+        <h4>S Y E D &nbsp; W A J H I</h4>
+        <p class="left-student">Student</p>
+        <p class="karachi">Karachi, Sindh</p>
+        <p class="uni"><img src="./pic/vu.png"> Virtual University</p>
+      </div>
+    </div>
+
+    <!-- Second box -->
+    <div class="container-fluid leftside second-box">
+
+      <!-- info -->
+      <div class="profile-info">
+
+        <p class="left-student second-box"><a href="">Profile viewers
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;18k</a>
+        </p>
+        <p class="left-student"><a href="">Post
+            impressions&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;31k</a></p>
+
+      </div>
+    </div>
+
+    <!-- third box -->
+    <div class="container-fluid leftside second-box">
+
+      <!-- info -->
+      <div class="profile-info">
+        <p class="karachi">Achieve your goals with premium</p>
+        <p class="uni"><img src="./pic/brown&yellowBg.jpg">Try premium for PKR0</p>
+      </div>
+    </div>
+
+    <!-- fourth-box -->
+    <div class="container-fluid leftside forth-box">
+      <h6>Saved Items</h6>
+      <ul class="list-unstyled">
+        <li>⭐ Groups</li>
+        <li>📰 Newsletters</li>
+        <li>📅 Events</li>
+      </ul>
+    </div>
   </div>
+
+
 
   <!-- Right Sidebar -->
   <div class="sidebar-right bg-white p-3 border-start">
-    <h6>Today's Puzzle 🧩</h6>
+      <!-- first box -->
+    <div class="container-fluid leftside second-box">
+      <div class="profile-info">
+         <h6>Today's Puzzle 🧩</h6><br>
     <p>Zip - Solve in 60s!</p>
+      </div>
+    </div>
     <hr>
-    <h6>Add to your feed</h6>
-    <p>👨‍💻 Ameen Alam</p>
-    <p>👨‍💻 Zia Khan</p>
+      <div class="container-fluid leftside second-box">
+      <div class="profile-info">
+       <h6>Add to your feed</h6><br>
+    <p>👨‍💻 Ameen Alam</p><br>
+    <p>👨‍💻 Zia Khan</p><br>
     <p>🌍 Bill Gates</p>
+      </div>
+    </div>
   </div>
 
   <!-- Center Feed -->
   <div class="feed">
-    <div class="card mb-3">
-      <div class="card-body">
-        <h6><i class="fa-solid fa-user"></i> Abdul Muneeb</h6>
-        <p>Graphic Designer | WordPress Developer</p>
-        <p>Check out my Creative Portfolio 2025 🎨</p>
-        <a href="#">behance.net link</a>
+  <!-- modal -->
+<div class="media p-3 border rounded">
+  <img src="./pic/profilepic.jpeg" class="mr-3 rounded-circle" style="width:50px; height:50px;" alt="Profile">
+
+<div class="modal" id="myModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
       </div>
     </div>
-    <div class="card mb-3">
-      <div class="card-body">
-        <h6><i class="fa-solid fa-user"></i> Another Post</h6>
-        <p>Post content goes here...</p>
+  </div>
+</div>
+  <div class="media-body">
+   <button class="btn searchbar" data-bs-toggle="modal" data-bs-target="#myModal"> <input type="text" class="form-control" placeholder="Start a post"></button>
+    <div class="d-flex justify-content-around mt-2">
+      <button class="btn btn-light">📹 Video</button>
+      <button class="btn btn-light">🖼️ Photo</button>
+      <button class="btn btn-light">📝 Write article</button>
+    </div>
+  </div>
+</div>
+
+<!-- post 1 -->
+    <div class="card mb-3">     
+      <div class="post-body">   
+<div class="post-header">
+  
+  <div class="left">
+    <div class="post-pf">
+      <img src="./pic/boy1.jpg" alt="">
+    </div>
+
+    <div class="post-info">
+      <strong>University of Aberdeen</strong>
+      <small>1h <i class="fa-solid fa-earth-americas"></i></small>
+    </div>
+  </div>
+
+  <div class="right">
+    <i class="fa-solid fa-ellipsis"></i>
+    <i class="fa-solid fa-xmark"></i>
+  </div>
+
+</div>
+  <img src="./pic/post1.jpg" alt="Promo Image" class="promo-img">
+  <div class="promo-body">
+    <p class="mt-2 like-picture">
+      <img src="./pic/like.svg" alt="">
+      <img src="./pic/love.png" alt="">
+      <img src="./pic/smile.png" alt="">
+      <small>195k</small></p>
+  </div>
+  <div class="promo-footer">
+    <div><i class="fa-regular fa-thumbs-up"></i> 1,340</div>
+    <div><i class="fa-regular fa-comment"></i> 49</div>
+    <div><i class="fa-solid fa-retweet"></i> 29</div>
+    <div><i class="fa-regular fa-paper-plane"></i> Send</div>
+  </div>
+
+
+      </div>
+    </div>
+    
+    <!-- post 2 -->
+     <div class="card mb-3">     
+      <div class="post-body">   
+<div class="post-header">
+  
+  <div class="left">
+    <div class="post-pf">
+      <img src="./pic/boy2.jpg" alt="">
+    </div>
+
+    <div class="post-info">
+      <strong>Momin Haider</strong>
+      <small>5h <i class="fa-solid fa-earth-americas"></i></small>
+    </div>
+  </div>
+
+  <div class="right">
+    <i class="fa-solid fa-ellipsis"></i>
+    <i class="fa-solid fa-xmark"></i>
+  </div>
+
+</div>
+  <img src="./pic/post2.avif" alt="Promo Image" class="promo-img">
+  <div class="promo-body">
+    <p class="mt-2 like-picture">
+      <img src="./pic/like.svg" alt="">
+      <img src="./pic/love.png" alt="">
+      <img src="./pic/smile.png" alt="">
+      <small>97k</small></p>
+  </div>
+  <div class="promo-footer">
+    <div><i class="fa-regular fa-thumbs-up"></i> 1,990</div>
+    <div><i class="fa-regular fa-comment"></i> 89</div>
+    <div><i class="fa-solid fa-retweet"></i> 292</div>
+    <div><i class="fa-regular fa-paper-plane"></i> Send</div>
+  </div>
+
+
+      </div>
+    </div>
+
+    <!-- post 3 -->
+     <div class="card mb-3">     
+      <div class="post-body">   
+<div class="post-header">
+  
+  <div class="left">
+    <div class="post-pf">
+      <img src="./pic/boy3.webp" alt="">
+    </div>
+
+    <div class="post-info">
+      <strong>Ali Haider</strong>
+      <small>6h <i class="fa-solid fa-earth-americas"></i></small>
+    </div>
+  </div>
+
+  <div class="right">
+    <i class="fa-solid fa-ellipsis"></i>
+    <i class="fa-solid fa-xmark"></i>
+  </div>
+
+</div>
+  <img src="./pic/post3.webp" alt="Promo Image" class="promo-img">
+  <div class="promo-body">
+    <p class="mt-2 like-picture">
+      <img src="./pic/like.svg" alt="">
+      <img src="./pic/love.png" alt="">
+      <img src="./pic/smile.png" alt="">
+      <small>188k</small></p>
+  </div>
+  <div class="promo-footer">
+    <div><i class="fa-regular fa-thumbs-up"></i> 1,140</div>
+    <div><i class="fa-regular fa-comment"></i> 34</div>
+    <div><i class="fa-solid fa-retweet"></i> 64</div>
+    <div><i class="fa-regular fa-paper-plane"></i> Send</div>
+  </div>
+
+
       </div>
     </div>
   </div>
@@ -102,4 +290,5 @@
   <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
